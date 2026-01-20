@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "home": "Αρχική",
+    "services": "Υπηρεσίες",
+    "about": "Σχετικά",
+    "projects": "Έργα",
+    "contact": "Επικοινωνία"
+  },
+  "hero": {
+    "badge": "Digital Engineering Studio",
+    "established": "EST. 2018",
+    "title1": "Χτίζουμε",
+    "title2": "Ψηφιακή",
+    "title3": "Αριστεία",
+    "subtitle": "Μετατρέπουμε καινοτόμες ιδέες σε κορυφαία ψηφιακά προϊόντα",
+    "cta": "Ξεκινήστε το Έργο σας",
+    "ctaSecondary": "Δείτε τη Δουλειά μας",
+    "stats": {
+      "projects": "Ολοκληρωμένα Έργα",
+      "clients": "Ικανοποιημένοι Πελάτες",
+      "years": "Χρόνια Εμπειρίας"
+    }
+  },
+  "services": {
+    "title": "Capabilities",
+    "subtitle": "Ολοκληρωμένες ψηφιακές λύσεις σχεδιασμένες για κλιμάκωση, απόδοση και διαρκή αντίκτυπο",
+    "items": [
+      {
+        "title": "Web Applications",
+        "description": "Επαγγελματικές web platforms με Next.js, React και Node.js. Αστραπιαία γρήγορες, βελτιστοποιημένες για SEO και απεριόριστα επεκτάσιμες."
+      },
+      {
+        "title": "Web3 & Blockchain",
+        "description": "Έξυπνα συμβόλαια, πρωτόκολλα DeFi και αποκεντρωμένες εφαρμογές στο MultiversX και πέρα. Τεχνολογία του μέλλοντος σήμερα."
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Native iOS με Swift και cross-platform λύσεις. Pixel-perfect διεπαφές που οι χρήστες πραγματικά λατρεύουν να χρησιμοποιούν."
+      },
+      {
+        "title": "Ενσωμάτωση AI",
+        "description": "Μοντέλα μηχανικής μάθησης, ευφυής αυτοματοποίηση και λειτουργίες με AI που δίνουν στην επιχείρησή σας ανταγωνιστικό πλεονέκτημα."
+      }
+    ],
+    "tech": {
+      "web": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "React"
+      ],
+      "web3": [
+        "MultiversX",
+        "Solidity",
+        "Rust",
+        "DeFi"
+      ],
+      "mobile": [
+        "React Native",
+        "Swift",
+        "Kotlin",
+        "Flutter"
+      ],
+      "ai": [
+        "OpenAI",
+        "Python",
+        "Mistral",
+        "Vector DBs"
+      ]
+    }
+  },
+  "about": {
+    "title": "Το Στούντιο",
+    "subtitle": "Σχεδιάζοντας τα Ψηφιακά Οικοσυστήματα του Αύριο",
+    "bio": "Η VERTA είναι ένα κορυφαίο στούντιο ψηφιακής μηχανικής. Η φιλοσοφία μας: εξαιρετικός κώδικας, προσεκτικός σχεδιασμός, ασυμβίβαστη ποιότητα.",
+    "founders": [
+      {
+        "name": "Κωνσταντίνος Λεπίδας",
+        "role": "Ιδρυτής & Επικεφαλής Μηχανικός",
+        "location": "Θεσσαλονίκη, Ελλάδα",
+        "bio": "Με βαθιά εξειδίκευση σε full-stack ανάπτυξη, αρχιτεκτονική blockchain και ενσωμάτωση AI, ο Κωνσταντίνος μετατρέπει φιλόδοξες ιδέες σε καθοριστικά ψηφιακά προϊόντα."
+      },
+      {
+        "name": "Κώστας Τζούμπας",
+        "role": "Συνιδρυτής & Μηχανικός Smart Contracts",
+        "location": "Ζάκυνθος, Ελλάδα",
+        "bio": "Ισχυρές μαθηματικές βάσεις, προηγμένες προγραμματιστικές δεξιότητες και εμπειρία σε Blockchain & Smart Contracts. Πρόθυμος να αντιμετωπίσει νέες προκλήσεις σε καινοτόμους τομείς."
+      }
+    ],
+    "skills": "Tech Stack",
+    "experience": "Ιστορικό Επιτυχιών",
+    "stats": {
+      "genesis": "Γένεση",
+      "operation": "Λειτουργία",
+      "network": "Δίκτυο",
+      "standard": "Πρότυπο",
+      "decentralized": "Αποκεντρωμένη",
+      "global": "Παγκόσμιο",
+      "excellence": "Αριστεία"
+    }
+  },
+  "projects": {
+    "title": "Επιλεγμένα Έργα",
+    "subtitle": "Διαλεγμένα έργα που αναδεικνύουν την τέχνη και τις δυνατότητές μας",
+    "viewSite": "Προβολή",
+    "items": [
+      {
+        "name": "YABALITSA",
+        "year": "2025",
+        "description": "Βρείτε και κλείστε γήπεδα ποδοσφαίρου στην Ελλάδα. Εύκολη κράτηση για 5x5, 6x6, 7x7, 8x8 γήπεδα. Ολοκληρωμένη διαχείριση για ιδιοκτήτες.",
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "TailwindCSS",
+          "PostgreSQL"
+        ],
+        "link": "https://www.yabalitsa.com/"
+      },
+      {
+        "name": "FUDOUT",
+        "year": "2024",
+        "description": "Ανταγωνιστική P2P αρένα μάχης από τους SuperRareBears. Real-time gameplay, ψηφοφορία κοινότητας και blockchain-verified συλλεκτικά.",
+        "tech": [
+          "Next.js",
+          "MultiversX",
+          "TailwindCSS",
+          "WebSocket"
+        ],
+        "link": "https://fudout.superrarebears.com/"
+      },
+      {
+        "name": "BEARLYBANK",
+        "year": "2024",
+        "description": "Αυτοματοποιημένο DeFi πρωτόκολλο αποταμίευσης. Προγραμματίστε πληρωμές κρυπτονομισμάτων με στρατιωτικού επιπέδου ασφάλεια στο MultiversX.",
+        "tech": [
+          "Next.js",
+          "Smart Contracts",
+          "MultiversX SDK"
+        ],
+        "link": "https://bbank-eight.vercel.app/"
+      },
+      {
+        "name": "WOODPUNKS LIMITED",
+        "year": "2025",
+        "description": "Premium e-commerce ξύλινων custom προϊόντων. Απρόσκοπτη ενσωμάτωση Web3 πληρωμών για τον σύγχρονο συλλέκτη.",
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "Stripe",
+          "Crypto Payments"
+        ],
+        "link": "https://dapp.woodenpunks.com/"
+      },
+      {
+        "name": "AVGOUSTE",
+        "year": "2023",
+        "description": "Premium ιστοσελίδα ιατρείου για ειδικό Βελονισμού. Καθαρός, επαγγελματικός, βελτιστοποιημένος για μετατροπές.",
+        "tech": [
+          "WordPress",
+          "Custom Theme",
+          "SEO",
+          "Schema Markup"
+        ],
+        "link": "https://avgouste.gr/"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ξεκινήστε μια Συζήτηση",
+    "subtitle": "Ας συζητήσουμε την επόμενη μεγάλη σας ιδέα. Απαντάμε εντός 24 ωρών.",
+    "form": {
+      "name": "Ονοματεπώνυμο",
+      "email": "Διεύθυνση Email",
+      "company": "Όνομα Εταιρείας",
+      "project": "Τύπος Έργου",
+      "budget": "Budget",
+      "message": "Λεπτομέρειες Έργου",
+      "submit": "Αποστολή Αιτήματος",
+      "sending": "Αποστολή...",
+      "success": "Το μήνυμα παραλήφθηκε! Θα επικοινωνήσουμε σύντομα.",
+      "error": "Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.",
+      "namePlaceholder": "Γιάννης Παπαδόπουλος",
+      "emailPlaceholder": "giannis@company.com",
+      "companyPlaceholder": "Η εταιρεία σας",
+      "messagePlaceholder": "Πείτε μας για το έργο σας..."
+    },
+    "projectTypes": [
+      "Web Application",
+      "Mobile App",
+      "Web3 / Blockchain",
+      "AI Solution",
+      "E-Commerce",
+      "Consulting",
+      "Other"
+    ],
+    "budgets": [
+      "Κάτω από €5.000",
+      "€5.000 – €15.000",
+      "€15.000 – €50.000",
+      "€50.000 – €100.000",
+      "€100.000+",
+      "Ας συζητήσουμε"
+    ],
+    "info": {
+      "email": "Email",
+      "location": "Τοποθεσία",
+      "availability": "Κατάσταση",
+      "availabilityText": "Δεχόμαστε νέα έργα"
+    }
+  },
+  "footer": {
+    "tagline": "Δημιουργούμε εξαιρετικές ψηφιακές εμπειρίες από το 2018.",
+    "rights": "Με επιφύλαξη παντός δικαιώματος.",
+    "links": {
+      "privacy": "Απόρρητο",
+      "terms": "Όροι"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    },
+    "language": "Γλώσσα"
+  },
+  "validation": {
+    "nameMin": "Το όνομα πρέπει να έχει τουλάχιστον 2 χαρακτήρες",
+    "emailInvalid": "Μη έγκυρη διεύθυνση email",
+    "messageMin": "Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες",
+    "sendFailed": "Αποτυχία αποστολής μηνύματος. Παρακαλώ δοκιμάστε ξανά αργότερα."
+  },
+  "metadata": {
+    "title": "VERTA | Premium Ψηφιακή Εταιρεία - Web, Mobile, Web3 & AI Ανάπτυξη",
+    "titleTemplate": "%s | VERTA Ψηφιακή Εταιρεία",
+    "description": "Η VERTA είναι μια κορυφαία ψηφιακή εταιρεία στη Θεσσαλονίκη, Ελλάδα. Αναπτύσσουμε εξαιρετικές εφαρμογές ιστού, εφαρμογές κινητών, blockchain DApps και λύσεις με τεχνητή νοημοσύνη. 10+ χρόνια εμπειρίας. 50+ έργα.",
+    "ogTitle": "VERTA | Premium Στούντιο Ψηφιακής Μηχανικής & AI",
+    "ogDescription": "Σχεδιάζουμε ψηφιακή αριστεία μέσω εφαρμογών υψηλής απόδοσης, mobile λύσεων και προσαρμοσμένης ενσωμάτωσης AI.",
+    "twitterTitle": "VERTA | Premium Στούντιο Ψηφιακής Μηχανικής & AI",
+    "twitterDescription": "Σχεδιάζουμε ψηφιακή αριστεία μέσω εφαρμογών υψηλής απόδοσης, mobile λύσεων και προσαρμοσμένης ενσωμάτωσης AI.",
+    "jsonLd": {
+      "organizationDescription": "Premium ψηφιακή εταιρεία εξειδικευμένη σε ανάπτυξη ιστού, εφαρμογές κινητών, blockchain και λύσεις AI.",
+      "websiteDescription": "Premium ψηφιακή εταιρεία για web, mobile, Web3 και AI ανάπτυξη.",
+      "founderJobTitle": "Ιδρυτής & Επικεφαλής Προγραμματιστής"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Μετάβαση στο κυρίως περιεχόμενο"
+  }
+}

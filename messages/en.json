@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "projects": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Digital Engineering Studio",
+    "established": "EST. 2018",
+    "title1": "We Engineer",
+    "title2": "Digital",
+    "title3": "Excellence",
+    "subtitle": "Transforming visionary ideas into exceptional digital products",
+    "cta": "Start Your Project",
+    "ctaSecondary": "Explore Our Work",
+    "stats": {
+      "projects": "Projects Shipped",
+      "clients": "Happy Clients",
+      "years": "Years of Mastery"
+    }
+  },
+  "services": {
+    "title": "Capabilities",
+    "subtitle": "End-to-end digital solutions engineered for scale, performance, and lasting impact",
+    "items": [
+      {
+        "title": "Web Applications",
+        "description": "Enterprise-grade web platforms built with Next.js, React, and Node.js. Lightning-fast, SEO-optimized, and infinitely scalable."
+      },
+      {
+        "title": "Web3 & Blockchain",
+        "description": "Smart contracts, DeFi protocols, and decentralized applications on MultiversX and beyond. Future-proof technology today."
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Native iOS with Swift and cross-platform solutions. Pixel-perfect interfaces that users genuinely love to use."
+      },
+      {
+        "title": "AI Integration",
+        "description": "Machine learning models, intelligent automation, and AI-powered features that give your business an unfair advantage."
+      }
+    ],
+    "tech": {
+      "web": ["Next.js", "TypeScript", "Node.js", "React"],
+      "web3": ["MultiversX", "Solidity", "Rust", "DeFi"],
+      "mobile": ["React Native", "Swift", "Kotlin", "Flutter"],
+      "ai": ["OpenAI", "Python", "Mistral", "Vector DBs"]
+    }
+  },
+  "about": {
+    "title": "The Studio",
+    "subtitle": "Engineering Tomorrow's Digital Ecosystems",
+    "bio": "VERTA is an elite digital engineering studio. Our philosophy: exceptional code, thoughtful design, relentless quality.",
+    "founders": [
+      {
+        "name": "Konstantinos Lepidas",
+        "role": "Founder & Principal Engineer",
+        "location": "Thessaloniki, Greece",
+        "bio": "With deep expertise spanning full-stack development, blockchain architecture, and AI integration, Konstantinos transforms ambitious ideas into market-defining digital products."
+      },
+      {
+        "name": "Kostas Tzoumpas",
+        "role": "Co-Founder & Smart Contracts Engineer",
+        "location": "Zakynthos, Greece",
+        "bio": "Strong mathematical bases, advanced programming skills, and experience in Blockchain & Smart Contracts. Eager to face new challenges and apply skills on innovative sectors."
+      }
+    ],
+    "skills": "Technical Arsenal",
+    "experience": "Track Record",
+    "stats": {
+      "genesis": "Genesis",
+      "operation": "Operation",
+      "network": "Network",
+      "standard": "Standard",
+      "decentralized": "Decentralized",
+      "global": "Global",
+      "excellence": "Excellence"
+    }
+  },
+  "projects": {
+    "title": "Selected Work",
+    "subtitle": "Handpicked projects that showcase our craft and capabilities",
+    "viewSite": "View Live",
+    "items": [
+      {
+        "name": "YABALITSA",
+        "year": "2025",
+        "description": "Find and book football fields in Greece. Easy booking for 5x5, 6x6, 7x7, 8x8 pitches. Comprehensive field management for owners.",
+        "tech": ["Next.js", "Supabase", "TailwindCSS", "PostgreSQL"],
+        "link": "https://www.yabalitsa.com/"
+      },
+      {
+        "name": "FUDOUT",
+        "year": "2024",
+        "description": "Competitive P2P battle arena by SuperRareBears. Real-time gameplay, community voting, and blockchain-verified collectibles.",
+        "tech": ["Next.js", "MultiversX", "TailwindCSS", "WebSocket"],
+        "link": "https://fudout.superrarebears.com/"
+      },
+      {
+        "name": "BEARLYBANK",
+        "year": "2024",
+        "description": "Automated DeFi savings protocol. Schedule cryptocurrency payouts with military-grade security on MultiversX.",
+        "tech": ["Next.js", "Smart Contracts", "MultiversX SDK"],
+        "link": "https://bbank-eight.vercel.app/"
+      },
+      {
+        "name": "WOODPUNKS LIMITED",
+        "year": "2025",
+        "description": "Premium custom wood merchandise e-commerce. Seamless Web3 payment integration for the modern collector.",
+        "tech": ["Next.js", "Supabase", "Stripe", "Crypto Payments"],
+        "link": "https://dapp.woodenpunks.com/"
+      },
+      {
+        "name": "AVGOUSTE",
+        "year": "2023",
+        "description": "Premium medical practice website for an Acupuncture specialist. Clean, professional, conversion-optimized.",
+        "tech": ["WordPress", "Custom Theme", "SEO", "Schema Markup"],
+        "link": "https://avgouste.gr/"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Start a Conversation",
+    "subtitle": "Let's discuss your next big idea. We respond within 24 hours.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "project": "Project Type",
+      "budget": "Investment Range",
+      "message": "Project Details",
+      "submit": "Send Inquiry",
+      "sending": "Sending...",
+      "success": "Message received! We'll be in touch soon.",
+      "error": "Something went wrong. Please try again.",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "john@company.com",
+      "companyPlaceholder": "Your company",
+      "messagePlaceholder": "Tell us about your project..."
+    },
+    "projectTypes": ["Web Application", "Mobile App", "Web3 / Blockchain", "AI Solution", "E-Commerce", "Consulting", "Other"],
+    "budgets": ["Under €5,000", "€5,000 – €15,000", "€15,000 – €50,000", "€50,000 – €100,000", "€100,000+", "Let's discuss"],
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "availability": "Status",
+      "availabilityText": "Accepting new projects"
+    }
+  },
+  "footer": {
+    "tagline": "Engineering exceptional digital experiences since 2018.",
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    },
+    "language": "Language"
+  },
+  "validation": {
+    "nameMin": "Name must be at least 2 characters",
+    "emailInvalid": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters",
+    "sendFailed": "Failed to send message. Please try again later."
+  },
+  "metadata": {
+    "title": "VERTA | Premium Digital Agency - Web, Mobile, Web3 & AI Development",
+    "titleTemplate": "%s | VERTA Digital Agency",
+    "description": "VERTA is an elite digital agency in Thessaloniki, Greece. We engineer exceptional web applications, mobile apps, blockchain DApps, and AI-powered solutions. 10+ years expertise. 50+ projects delivered.",
+    "ogTitle": "VERTA | Premium Digital Engineering & AI Studio",
+    "ogDescription": "Engineering digital excellence through high-performance web apps, mobile solutions, and custom AI integration.",
+    "twitterTitle": "VERTA | Premium Digital Engineering & AI Studio",
+    "twitterDescription": "Engineering digital excellence through high-performance web apps, mobile solutions, and custom AI integration.",
+    "jsonLd": {
+      "organizationDescription": "Premium digital agency specializing in web development, mobile apps, blockchain, and AI solutions.",
+      "websiteDescription": "Premium digital agency for web, mobile, Web3, and AI development.",
+      "founderJobTitle": "Founder & Lead Developer"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  }
+}

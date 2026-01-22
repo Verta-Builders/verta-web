@@ -5,8 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useLoading } from "./LoadingProvider";
 
 export default function Navigation() {
+  const { isLoading } = useLoading();
   const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -36,7 +38,7 @@ export default function Navigation() {
     <>
       <motion.header
         initial={{ y: -100 }}
-        animate={{ y: 0 }}
+        animate={!isLoading ? { y: 0 } : { y: -100 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-dark-950/90 backdrop-blur-xl" : "bg-transparent"
           }`}

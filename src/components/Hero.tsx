@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowDownRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useLoading } from "./LoadingProvider";
+
 
 export default function Hero() {
+  const { isLoading } = useLoading();
   const t = useTranslations();
 
   const scrollToSection = (href: string) => {
@@ -37,7 +40,7 @@ export default function Hero() {
           {/* Top Line */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={!isLoading ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1 }}
             className="flex items-center gap-4 mb-12"
           >

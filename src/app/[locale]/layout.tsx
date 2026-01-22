@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import "../globals.css";
+import LoadingProvider from "@/components/LoadingProvider";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -157,7 +158,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound();
@@ -300,7 +301,9 @@ export default async function RootLayout({
         className={`${outfit.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <LoadingProvider>
+            {children}
+          </LoadingProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -39,19 +39,29 @@ export default function Projects() {
         </motion.div>
 
         {/* Projects List */}
-        <div className="border-t border-dark-800">
+        <div className="border-t border-dark-800 grid grid-cols-1 lg:grid-cols-2">
           {[0, 1, 2, 3, 4].map((index) => (
-            <motion.a
+            <motion.div
               key={index}
-              href={t(`projects.items.${index}.link`)}
-              target="_blank"
-              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="group block border-b border-dark-800 py-8 lg:py-12"
+              className={`
+                group relative border-b border-dark-800 py-8 lg:py-12
+                ${index < 2 ? "lg:col-span-1" : "lg:col-span-2"}
+                ${index === 0 ? "lg:border-r" : ""}
+              `}
             >
-              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+              {/* Main Project Link Overlay */}
+              <a
+                href={t(`projects.items.${index}.link`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-0"
+                aria-label={t(`projects.items.${index}.name`)}
+              />
+
+              <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 pointer-events-none">
                 {/* Left */}
                 <div className="flex items-center gap-8">
                   {/* Number */}
@@ -60,7 +70,26 @@ export default function Projects() {
                   </span>
 
                   {/* Name */}
-                  <div className="flex flex-col">
+                  <div className="flex flex-col items-start gap-2">
+                    {t(`projects.items.${index}.badge`) && (
+                      <a
+                        href={t(`projects.items.${index}.badgeLink`) || undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`
+                          pointer-events-auto
+                          inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider font-bold border transition-all
+                          ${t(`projects.items.${index}.badge`).includes("Winner") || t(`projects.items.${index}.badge`).includes("Νικητής")
+                            ? "border-yellow-500/50 text-yellow-500 bg-yellow-500/10 hover:bg-yellow-500/20"
+                            : "border-zinc-500/50 text-zinc-400 bg-zinc-500/10 hover:bg-zinc-500/20"
+                          }
+                          ${!t(`projects.items.${index}.badgeLink`) ? "pointer-events-none" : "hover:border-yellow-500"}
+                        `}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
+                        {t(`projects.items.${index}.badge`)}
+                      </a>
+                    )}
                     <h3 className="text-3xl lg:text-5xl font-display font-bold text-white group-hover:text-dark-300 transition-colors">
                       {t(`projects.items.${index}.name`)}
                     </h3>
@@ -90,7 +119,7 @@ export default function Projects() {
                   </motion.div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
 

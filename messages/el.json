@@ -105,6 +105,34 @@
     "viewSite": "Προβολή",
     "items": [
       {
+        "name": "DCAi",
+        "year": "2026",
+        "description": "Το DCAi αναλύει τη μεταβλητότητα on-chain, μοτίβα ρευστότητας και το αίσθημα της αγοράς για τον καθορισμό των βέλτιστων σημείων εισόδου. Κάθε εκτέλεση DCA χρονίζεται από την τεχνητή νοημοσύνη, όχι από τυχαία προγράμματα.",
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "Stripe",
+          "Crypto Payments"
+        ],
+        "link": "https://dcai-mvx.vercel.app/",
+        "badge": "Νικητής του MultiversX Hackathon",
+        "badgeLink": "https://bon.multiversx.com/builders-track"
+      },
+      {
+        "name": "Liquorix",
+        "year": "2026",
+        "description": "Το Liquorix είναι ένας AI-driven βελτιστοποιητής απόδοσης που εξισορροπεί έξυπνα το EGLD σας μεταξύ πρωτοκόλλων staking και δανεισμού για τη μέγιστη απόδοση διατηρώντας άμεση ρευστότητα.",
+        "tech": [
+          "Next.js",
+          "MultiversX",
+          "TailwindCSS",
+          "WebSocket"
+        ],
+        "link": "https://liquorix-mvx.vercel.app/",
+        "badge": "2η Θέση στο MultiversX Hackathon",
+        "badgeLink": ""
+      },
+      {
         "name": "YABALITSA",
         "year": "2025",
         "description": "Βρείτε και κλείστε γήπεδα ποδοσφαίρου στην Ελλάδα. Εύκολη κράτηση για 5x5, 6x6, 7x7, 8x8 γήπεδα. Ολοκληρωμένη διαχείριση για ιδιοκτήτες.",
@@ -114,19 +142,9 @@
           "TailwindCSS",
           "PostgreSQL"
         ],
-        "link": "https://www.yabalitsa.com/"
-      },
-      {
-        "name": "FUDOUT",
-        "year": "2024",
-        "description": "Ανταγωνιστική P2P αρένα μάχης από τους SuperRareBears. Real-time gameplay, ψηφοφορία κοινότητας και blockchain-verified συλλεκτικά.",
-        "tech": [
-          "Next.js",
-          "MultiversX",
-          "TailwindCSS",
-          "WebSocket"
-        ],
-        "link": "https://fudout.superrarebears.com/"
+        "link": "https://www.yabalitsa.com/",
+        "badge": "",
+        "badgeLink": ""
       },
       {
         "name": "BEARLYBANK",
@@ -137,19 +155,9 @@
           "Smart Contracts",
           "MultiversX SDK"
         ],
-        "link": "https://bbank-eight.vercel.app/"
-      },
-      {
-        "name": "WOODPUNKS LIMITED",
-        "year": "2025",
-        "description": "Premium e-commerce ξύλινων custom προϊόντων. Απρόσκοπτη ενσωμάτωση Web3 πληρωμών για τον σύγχρονο συλλέκτη.",
-        "tech": [
-          "Next.js",
-          "Supabase",
-          "Stripe",
-          "Crypto Payments"
-        ],
-        "link": "https://dapp.woodenpunks.com/"
+        "link": "https://bbank-eight.vercel.app/",
+        "badge": "",
+        "badgeLink": ""
       },
       {
         "name": "AVGOUSTE",
@@ -161,7 +169,9 @@
           "SEO",
           "Schema Markup"
         ],
-        "link": "https://avgouste.gr/"
+        "link": "https://avgouste.gr/",
+        "badge": "",
+        "badgeLink": ""
       }
     ]
   },

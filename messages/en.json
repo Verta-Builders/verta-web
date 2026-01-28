@@ -43,10 +43,30 @@
       }
     ],
     "tech": {
-      "web": ["Next.js", "TypeScript", "Node.js", "React"],
-      "web3": ["MultiversX", "Solidity", "Rust", "DeFi"],
-      "mobile": ["React Native", "Swift", "Kotlin", "Flutter"],
-      "ai": ["OpenAI", "Python", "Mistral", "Vector DBs"]
+      "web": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "React"
+      ],
+      "web3": [
+        "MultiversX",
+        "Solidity",
+        "Rust",
+        "DeFi"
+      ],
+      "mobile": [
+        "React Native",
+        "Swift",
+        "Kotlin",
+        "Flutter"
+      ],
+      "ai": [
+        "OpenAI",
+        "Python",
+        "Mistral",
+        "Vector DBs"
+      ]
     }
   },
   "about": {
@@ -85,39 +105,73 @@
     "viewSite": "View Live",
     "items": [
       {
+        "name": "DCAi",
+        "year": "2026",
+        "description": "DCAi analyzes on-chain volatility, liquidity patterns, and market sentiment to determine optimal entry points. Each DCA execution is timed by AI, not arbitrary schedules.",
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "Stripe",
+          "Crypto Payments"
+        ],
+        "link": "https://dcai-mvx.vercel.app/",
+        "badge": "Winner of MultiversX Hackathon",
+        "badgeLink": "https://bon.multiversx.com/builders-track"
+      },
+      {
+        "name": "Liquorix",
+        "year": "2026",
+        "description": "Liquorix is an AI-driven yield optimizer that intelligently rebalances your EGLD between staking and lending protocols to maximize your returns while maintaining instant liquidity.",
+        "tech": [
+          "Next.js",
+          "MultiversX",
+          "TailwindCSS",
+          "WebSocket"
+        ],
+        "link": "https://liquorix-mvx.vercel.app/",
+        "badge": "Runner up in MultiversX Hackathon",
+        "badgeLink": ""
+      },
+      {
         "name": "YABALITSA",
         "year": "2025",
         "description": "Find and book football fields in Greece. Easy booking for 5x5, 6x6, 7x7, 8x8 pitches. Comprehensive field management for owners.",
-        "tech": ["Next.js", "Supabase", "TailwindCSS", "PostgreSQL"],
-        "link": "https://www.yabalitsa.com/"
-      },
-      {
-        "name": "FUDOUT",
-        "year": "2024",
-        "description": "Competitive P2P battle arena by SuperRareBears. Real-time gameplay, community voting, and blockchain-verified collectibles.",
-        "tech": ["Next.js", "MultiversX", "TailwindCSS", "WebSocket"],
-        "link": "https://fudout.superrarebears.com/"
+        "tech": [
+          "Next.js",
+          "Supabase",
+          "TailwindCSS",
+          "PostgreSQL"
+        ],
+        "link": "https://www.yabalitsa.com/",
+        "badge": "",
+        "badgeLink": ""
       },
       {
         "name": "BEARLYBANK",
         "year": "2024",
         "description": "Automated DeFi savings protocol. Schedule cryptocurrency payouts with military-grade security on MultiversX.",
-        "tech": ["Next.js", "Smart Contracts", "MultiversX SDK"],
-        "link": "https://bbank-eight.vercel.app/"
-      },
-      {
-        "name": "WOODPUNKS LIMITED",
-        "year": "2025",
-        "description": "Premium custom wood merchandise e-commerce. Seamless Web3 payment integration for the modern collector.",
-        "tech": ["Next.js", "Supabase", "Stripe", "Crypto Payments"],
-        "link": "https://dapp.woodenpunks.com/"
+        "tech": [
+          "Next.js",
+          "Smart Contracts",
+          "MultiversX SDK"
+        ],
+        "link": "https://bbank-eight.vercel.app/",
+        "badge": "",
+        "badgeLink": ""
       },
       {
         "name": "AVGOUSTE",
         "year": "2023",
         "description": "Premium medical practice website for an Acupuncture specialist. Clean, professional, conversion-optimized.",
-        "tech": ["WordPress", "Custom Theme", "SEO", "Schema Markup"],
-        "link": "https://avgouste.gr/"
+        "tech": [
+          "WordPress",
+          "Custom Theme",
+          "SEO",
+          "Schema Markup"
+        ],
+        "link": "https://avgouste.gr/",
+        "badge": "",
+        "badgeLink": ""
       }
     ]
   },
@@ -140,8 +194,23 @@
       "companyPlaceholder": "Your company",
       "messagePlaceholder": "Tell us about your project..."
     },
-    "projectTypes": ["Web Application", "Mobile App", "Web3 / Blockchain", "AI Solution", "E-Commerce", "Consulting", "Other"],
-    "budgets": ["Under €5,000", "€5,000 – €15,000", "€15,000 – €50,000", "€50,000 – €100,000", "€100,000+", "Let's discuss"],
+    "projectTypes": [
+      "Web Application",
+      "Mobile App",
+      "Web3 / Blockchain",
+      "AI Solution",
+      "E-Commerce",
+      "Consulting",
+      "Other"
+    ],
+    "budgets": [
+      "Under €5,000",
+      "€5,000 – €15,000",
+      "€15,000 – €50,000",
+      "€50,000 – €100,000",
+      "€100,000+",
+      "Let's discuss"
+    ],
     "info": {
       "email": "Email",
       "location": "Location",

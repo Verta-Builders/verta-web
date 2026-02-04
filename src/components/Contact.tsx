@@ -184,8 +184,8 @@ export default function Contact() {
             <div className="space-y-8 mb-16">
               <div>
                 <div className="text-xs text-dark-600 uppercase tracking-widest mb-2">{t('contact.info.email')}</div>
-                <a href="mailto:hello@verta.com" className="text-2xl lg:text-3xl font-display font-bold text-white hover:text-dark-300 transition-colors">
-                  hello@verta.com
+                <a href="mailto:info@verta.builders" className="text-2xl lg:text-3xl font-display font-bold text-white hover:text-dark-300 transition-colors">
+                  info@verta.builders
                 </a>
               </div>
               <div>

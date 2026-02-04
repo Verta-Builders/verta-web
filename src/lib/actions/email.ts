@@ -22,7 +22,7 @@ type Locale = keyof typeof validationMessages;
 
 const getContactSchema = (locale: Locale) => {
   const messages = validationMessages[locale] || validationMessages.en;
-  
+
   return z.object({
     name: z.string().min(2, messages.nameMin),
     email: z.string().email(messages.emailInvalid),
@@ -38,7 +38,7 @@ export async function sendContactEmail(
   const validLocale = (locale === 'el' ? 'el' : 'en') as Locale;
   const messages = validationMessages[validLocale];
   const contactSchema = getContactSchema(validLocale);
-  
+
   try {
     // Validate the data
     const validatedData = contactSchema.parse(formData);
@@ -46,8 +46,8 @@ export async function sendContactEmail(
     // SIMULATION: In a real production app, you would use a service like Resend here:
     /*
     const { data, error } = await resend.emails.send({
-      from: 'VERTA <hello@verta.com>',
-      to: ['hello@verta.com'],
+      from: 'VERTA <info@verta.builders>',
+      to: ['info@verta.builders'],
       subject: `New Project Inquiry from ${validatedData.name}`,
       html: `<p>Name: ${validatedData.name}</p>...`,
     });

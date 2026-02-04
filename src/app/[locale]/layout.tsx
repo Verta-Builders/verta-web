@@ -208,7 +208,7 @@ export default async function RootLayout({
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "customer service",
-          email: "hello@verta.com",
+          email: "info@verta.builders",
           availableLanguage: ["English", "Greek"],
         },
       },
@@ -229,7 +229,7 @@ export default async function RootLayout({
         image: "https://verta.com/og-image.png",
         url: "https://verta.com",
         telephone: "+30-XXX-XXX-XXXX",
-        email: "hello@verta.com",
+        email: "info@verta.builders",
         priceRange: "€€€",
         address: {
           "@type": "PostalAddress",

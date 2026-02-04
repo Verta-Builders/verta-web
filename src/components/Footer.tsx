@@ -97,8 +97,8 @@ export default function Footer() {
           <div className="flex flex-col lg:items-end justify-between">
             <div className="flex flex-col lg:items-end gap-4 mb-12">
               <div className="text-xs text-dark-600 uppercase tracking-widest">{t('contact.info.email')}</div>
-              <a href="mailto:hello@verta.com" className="text-2xl font-display font-bold text-white hover:text-dark-400 transition-colors">
-                hello@verta.com
+              <a href="mailto:info@verta.builders" className="text-2xl font-display font-bold text-white hover:text-dark-400 transition-colors">
+                info@verta.builders
               </a>
             </div>
 

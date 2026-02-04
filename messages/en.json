@@ -81,7 +81,7 @@
         "bio": "With deep expertise spanning full-stack development, blockchain architecture, and AI integration, Konstantinos transforms ambitious ideas into market-defining digital products."
       },
       {
-        "name": "Kostas Tzoumpas",
+        "name": "Studio Member",
         "role": "Co-Founder & Smart Contracts Engineer",
         "location": "Zakynthos, Greece",
         "bio": "Strong mathematical bases, advanced programming skills, and experience in Blockchain & Smart Contracts. Eager to face new challenges and apply skills on innovative sectors."
@@ -130,6 +130,19 @@
         ],
         "link": "https://liquorix-mvx.vercel.app/",
         "badge": "Runner up in MultiversX Hackathon",
+        "badgeLink": ""
+      },
+      {
+        "name": "YUMEI",
+        "year": "2026",
+        "description": "AI COMIC ENGINE. Build entire comic books with the power of artificial intelligence.",
+        "tech": [
+          "Next.js",
+          "MongoDB",
+          "Nano Banan Pro"
+        ],
+        "link": "https://yumeicomic.vercel.app/",
+        "badge": "",
         "badgeLink": ""
       },
       {

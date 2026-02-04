@@ -40,7 +40,7 @@ export default function Projects() {
 
         {/* Projects List */}
         <div className="border-t border-dark-800 grid grid-cols-1 lg:grid-cols-2">
-          {[0, 1, 2, 3, 4].map((index) => (
+          {[0, 1, 2, 3, 4, 5].map((index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}

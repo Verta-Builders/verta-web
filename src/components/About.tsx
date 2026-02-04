@@ -149,15 +149,14 @@ function FounderCard({ founderIndex, isInView }: { founderIndex: number, isInVie
 
         <div className="flex justify-between items-start mb-12">
           <div className="relative">
-            <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-dark-950 text-3xl font-display font-bold shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-              {t(`about.founders.${founderIndex}.name`).charAt(0)}
+            <div className="w-20 h-20 rounded-2xl bg-white overflow-hidden flex items-center justify-center text-dark-950 text-3xl font-display font-bold shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+              <img
+                src={founderIndex === 0 ? "/images/team/lepidas.jpg" : "/images/team/member.jpg"}
+                alt={t(`about.founders.${founderIndex}.name`)}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -inset-2 bg-white/10 blur-xl rounded-full -z-10 animate-pulse" />
-          </div>
-
-          <div className="flex gap-4 opacity-40 group-hover:opacity-100 transition-opacity">
-            <Github className="w-5 h-5 text-white cursor-pointer hover:scale-110 transition-transform" />
-            <Linkedin className="w-5 h-5 text-white cursor-pointer hover:scale-110 transition-transform" />
           </div>
         </div>
 

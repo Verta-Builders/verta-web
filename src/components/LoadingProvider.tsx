@@ -22,7 +22,7 @@ export default function LoadingProvider({
         // Minimum loading time of 500ms + some buffer for the animation to feel good
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2000); // 1.5s animation + 0.5s pause
+        }, 1150); // 0.9s animation + 0.25s pause
 
         return () => clearTimeout(timer);
     }, []);
@@ -57,7 +57,7 @@ export default function LoadingProvider({
                                     initial={{ width: "0%" }}
                                     animate={{ width: "100%" }}
                                     transition={{
-                                        duration: 1.5,
+                                        duration: 0.9,
                                         ease: "easeInOut",
                                     }}
                                 />

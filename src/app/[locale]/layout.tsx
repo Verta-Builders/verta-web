@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Outfit, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { NextIntlClientProvider } from 'next-intl';
@@ -303,6 +304,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <LoadingProvider>
             {children}
+            <Analytics />
           </LoadingProvider>
         </NextIntlClientProvider>
       </body>

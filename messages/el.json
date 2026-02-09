@@ -22,7 +22,7 @@
     }
   },
   "services": {
-    "title": "Capabilities",
+    "title": "Δυνατότητες",
     "subtitle": "Ολοκληρωμένες ψηφιακές λύσεις σχεδιασμένες για κλιμάκωση, απόδοση, και διαρκές αντίκτυπο",
     "items": [
       {
@@ -211,10 +211,10 @@
       "Web Application",
       "Mobile App",
       "Web3 / Blockchain",
-      "AI Solution",
+      "Λύση AI",
       "E-Commerce",
-      "Consulting",
-      "Other"
+      "Συμβουλευτική",
+      "Άλλο"
     ],
     "budgets": [
       "Κάτω από €5.000",

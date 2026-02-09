@@ -151,7 +151,7 @@ function FounderCard({ founderIndex, isInView }: { founderIndex: number, isInVie
           <div className="relative">
             <div className="w-20 h-20 rounded-2xl bg-white overflow-hidden flex items-center justify-center text-dark-950 text-3xl font-display font-bold shadow-[0_0_30px_rgba(255,255,255,0.2)]">
               <img
-                src={founderIndex === 0 ? "/images/team/lepidas.jpg" : "/images/team/member.jpg"}
+                src={founderIndex === 0 ? "/images/team/lepidas.jpg" : "/images/team/tzoumpas.jpg"}
                 alt={t(`about.founders.${founderIndex}.name`)}
                 className="w-full h-full object-cover"
               />

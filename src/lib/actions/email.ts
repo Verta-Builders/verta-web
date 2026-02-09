@@ -1,8 +1,7 @@
 "use server";
 
 import { z } from "zod";
-
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 // Define validation messages for each locale
 const validationMessages = {
@@ -11,12 +10,14 @@ const validationMessages = {
     emailInvalid: "Invalid email address",
     messageMin: "Message must be at least 10 characters",
     sendFailed: "Failed to send message. Please try again later.",
+    missingKey: "Email service is not configured correctly."
   },
   el: {
     nameMin: "Το όνομα πρέπει να έχει τουλάχιστον 2 χαρακτήρες",
     emailInvalid: "Μη έγκυρη διεύθυνση email",
     messageMin: "Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες",
     sendFailed: "Αποτυχία αποστολής μηνύματος. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+    missingKey: "Η υπηρεσία email δεν έχει ρυθμιστεί σωστά."
   },
 };
 
@@ -33,16 +34,7 @@ const getContactSchema = (locale: Locale) => {
   });
 };
 
-// Create a reusable transporter object using SMTP transport
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || "587"),
-  secure: process.env.SMTP_PORT === "465", // Use SSL/TLS for 465
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendContactEmail(
   formData: { name: string; email: string; company?: string; message: string },
@@ -56,10 +48,16 @@ export async function sendContactEmail(
     // Validate the data
     const validatedData = contactSchema.parse(formData);
 
+    // Check if API key is present
+    if (!process.env.RESEND_API_KEY) {
+      console.error("Missing RESEND_API_KEY environment variable");
+      return { success: false, error: messages.missingKey };
+    }
+
     // Send the email
-    await transporter.sendMail({
-      from: `"${validatedData.name}" <${process.env.SMTP_FROM}>`,
-      to: process.env.CONTACT_EMAIL,
+    const { data, error } = await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || "noreply@verta.builders",
+      to: process.env.CONTACT_EMAIL || "info@verta.builders",
       replyTo: validatedData.email,
       subject: `New Project Inquiry from ${validatedData.name}${validatedData.company ? ` (${validatedData.company})` : ''}`,
       text: `
@@ -84,7 +82,12 @@ ${validatedData.message}
       `,
     });
 
-    console.log("Contact email sent successfully for:", validatedData.email);
+    if (error) {
+      console.error("Resend error:", error);
+      return { success: false, error: messages.sendFailed };
+    }
+
+    console.log("Contact email sent successfully via Resend. ID:", data?.id);
 
     return { success: true };
   } catch (error) {

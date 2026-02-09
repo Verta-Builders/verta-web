@@ -301,6 +301,19 @@ export default async function RootLayout({
       <body
         className={`${outfit.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SZE4DETTCE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SZE4DETTCE');
+          `}
+        </Script>
         <NextIntlClientProvider messages={messages}>
           <LoadingProvider>
             {children}

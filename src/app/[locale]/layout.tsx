@@ -92,20 +92,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: "VERTA",
-      images: [
-        {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
-          alt: "VERTA Digital Excellence",
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: ["/og-image.png"],
       creator: "@verta",
     },
     robots: {
@@ -131,13 +122,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     verification: {
       google: "your-google-verification-code",
     },
-    icons: {
-      icon: [
-        { url: "/favicon.ico", sizes: "any" },
-        { url: "/icon.svg", type: "image/svg+xml" },
-      ],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    },
+
     manifest: "/manifest.json",
     other: {
       "apple-mobile-web-app-capable": "yes",

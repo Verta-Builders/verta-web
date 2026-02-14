@@ -12,7 +12,7 @@
     "title1": "We Engineer",
     "title2": "Digital",
     "title3": "Excellence",
-    "subtitle": "From concept to launch — we build high-performance web apps, mobile products, and AI-powered solutions that drive growth",
+    "subtitle": "From concept to launch. We build high-performance web apps, mobile products, and AI-powered solutions that drive growth.",
     "cta": "Start Your Project",
     "ctaSecondary": "Explore Our Work",
     "scrollIndicator": "Scroll to explore",
@@ -23,15 +23,15 @@
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Full-stack digital solutions built for performance, scalability, and measurable business results",
+    "title": "What We Do",
+    "subtitle": "Full-stack digital solutions built for performance, scalability, and measurable business results.",
     "items": [
       {
-        "title": "Web Applications",
+        "title": "Websites",
         "description": "Custom web platforms built with Next.js, React, and Node.js. Blazing-fast load times, SEO-ready architecture, and scalable infrastructure designed to grow with your business."
       },
       {
-        "title": "Web3 & Blockchain",
+        "title": "Blockchain",
         "description": "Smart contracts, DeFi protocols, and decentralized applications on MultiversX and beyond. Secure, audited, production-ready blockchain solutions."
       },
       {
@@ -39,7 +39,7 @@
         "description": "Native iOS with Swift and cross-platform apps with React Native and Flutter. Intuitive, beautifully crafted interfaces that users love."
       },
       {
-        "title": "AI Integration",
+        "title": "AI Integrations",
         "description": "Custom AI models, intelligent automation, and LLM-powered features that streamline operations and give your business a real competitive edge."
       }
     ],
@@ -108,7 +108,7 @@
       {
         "name": "DCAi",
         "year": "2026",
-        "description": "AI-powered DCA engine that analyzes on-chain volatility, liquidity patterns, and market sentiment to time every crypto investment. No more guesswork — every execution is data-driven.",
+        "description": "AI-powered DCA engine that analyzes on-chain volatility, liquidity patterns, and market sentiment to time every crypto investment. No more guesswork, every execution is data-driven.",
         "tech": [
           "Next.js",
           "Supabase",
@@ -273,12 +273,12 @@
     "sendFailed": "Failed to send message. Please try again later."
   },
   "metadata": {
-    "title": "VERTA | Digital Agency in Greece — Web, Mobile, Blockchain & AI Development",
-    "titleTemplate": "%s | VERTA Digital Agency",
+    "title": "VERTA · Digital Agency in Greece — Web, Mobile, Blockchain & AI Development",
+    "titleTemplate": "%s · VERTA Digital Agency",
     "description": "VERTA is a premium digital agency in Thessaloniki, Greece. We design and build high-performance web applications, mobile apps, blockchain solutions, and AI-powered products. 50+ projects delivered for clients worldwide.",
-    "ogTitle": "VERTA | Digital Engineering & AI Studio in Greece",
+    "ogTitle": "VERTA · Digital Engineering & AI Studio in Greece",
     "ogDescription": "We build high-performance web apps, mobile products, blockchain solutions, and AI-powered features. 50+ projects delivered. Based in Greece, serving clients worldwide.",
-    "twitterTitle": "VERTA | Digital Engineering & AI Studio in Greece",
+    "twitterTitle": "VERTA · Digital Engineering & AI Studio in Greece",
     "twitterDescription": "We build high-performance web apps, mobile products, blockchain solutions, and AI-powered features. 50+ projects delivered. Based in Greece, serving clients worldwide.",
     "jsonLd": {
       "organizationDescription": "Premium digital agency specializing in custom web development, mobile app development, blockchain engineering, and AI-powered solutions. Based in Thessaloniki, Greece.",

@@ -103,7 +103,7 @@ export default function Hero() {
             </div>
 
             {/* Right - Stats */}
-            <div className="flex gap-16">
+            <div className="flex gap-8 md:gap-16">
               <Stat value="50+" label={t('hero.stats.projects')} />
               <Stat value="8+" label={t('hero.stats.years')} />
               <Stat value="30+" label={t('hero.stats.clients')} />

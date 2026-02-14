@@ -39,8 +39,8 @@ export default function Services() {
           <div>
             <span className="text-xs text-dark-500 uppercase tracking-[0.3em] mb-4 block">{t('nav.services')}</span>
             <h2 id="services-heading" className="text-6xl lg:text-8xl font-display font-bold text-white leading-[0.9]">
-              {t('services.title').split(" ").slice(0, 2).join(" ")}<br />
-              <span className="text-dark-500">{t('services.title').split(" ").slice(2).join(" ")}</span>
+              {t('services.title').split(" ").slice(0, 1).join(" ")}<br />
+              <span className="text-dark-500">{t('services.title').split(" ").slice(1).join(" ")}</span>
             </h2>
           </div>
           <p className="text-dark-400 text-xl font-light leading-relaxed max-w-md">

@@ -35,7 +35,7 @@ export default function About() {
             <span className="text-xs text-dark-500 uppercase tracking-[0.4em] mb-6 block font-medium">
               {t('nav.about')}
             </span>
-            <h2 id="about-heading" className="text-7xl lg:text-9xl font-display font-bold text-white leading-[0.85] tracking-tighter uppercase">
+            <h2 id="about-heading" className="text-7xl lg:text-9xl font-display font-bold text-white leading-[0.85] tracking-tighter">
               {t('about.title').split(" ").slice(0, 1).join(" ")}<br />
               <span className="text-dark-700">{t('about.title').split(" ").slice(1).join(" ")}</span>
             </h2>

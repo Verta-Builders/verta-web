@@ -12,34 +12,35 @@
     "title1": "We Engineer",
     "title2": "Digital",
     "title3": "Excellence",
-    "subtitle": "Transforming visionary ideas into exceptional digital products",
+    "subtitle": "From concept to launch — we build high-performance web apps, mobile products, and AI-powered solutions that drive growth",
     "cta": "Start Your Project",
     "ctaSecondary": "Explore Our Work",
+    "scrollIndicator": "Scroll to explore",
     "stats": {
-      "projects": "Projects Shipped",
+      "projects": "Projects Delivered",
       "clients": "Happy Clients",
-      "years": "Years of Mastery"
+      "years": "Years of Expertise"
     }
   },
   "services": {
-    "title": "Capabilities",
-    "subtitle": "End-to-end digital solutions engineered for scale, performance, and lasting impact",
+    "title": "Our Services",
+    "subtitle": "Full-stack digital solutions built for performance, scalability, and measurable business results",
     "items": [
       {
         "title": "Web Applications",
-        "description": "Enterprise-grade web platforms built with Next.js, React, and Node.js. Lightning-fast, SEO-optimized, and infinitely scalable."
+        "description": "Custom web platforms built with Next.js, React, and Node.js. Blazing-fast load times, SEO-ready architecture, and scalable infrastructure designed to grow with your business."
       },
       {
         "title": "Web3 & Blockchain",
-        "description": "Smart contracts, DeFi protocols, and decentralized applications on MultiversX and beyond. Future-proof technology today."
+        "description": "Smart contracts, DeFi protocols, and decentralized applications on MultiversX and beyond. Secure, audited, production-ready blockchain solutions."
       },
       {
         "title": "Mobile Apps",
-        "description": "Native iOS with Swift and cross-platform solutions. Pixel-perfect interfaces that users genuinely love to use."
+        "description": "Native iOS with Swift and cross-platform apps with React Native and Flutter. Intuitive, beautifully crafted interfaces that users love."
       },
       {
         "title": "AI Integration",
-        "description": "Machine learning models, intelligent automation, and AI-powered features that give your business an unfair advantage."
+        "description": "Custom AI models, intelligent automation, and LLM-powered features that streamline operations and give your business a real competitive edge."
       }
     ],
     "tech": {
@@ -71,20 +72,20 @@
   },
   "about": {
     "title": "The Studio",
-    "subtitle": "Engineering Tomorrow's Digital Ecosystems",
-    "bio": "VERTA is an elite digital engineering studio. Our philosophy: exceptional code, thoughtful design, relentless quality.",
+    "subtitle": "Building the Digital Infrastructure of Tomorrow",
+    "bio": "VERTA is a boutique digital engineering studio based in Greece. We combine deep technical expertise with thoughtful design to deliver software that performs, scales, and delights users.",
     "founders": [
       {
         "name": "Konstantinos Lepidas",
-        "role": "Co-Founder & Principal Engineer",
+        "role": "Co-Founder & Lead Engineer",
         "location": "Thessaloniki, Greece",
-        "bio": "With deep expertise spanning full-stack development, blockchain architecture, and AI integration, Konstantinos transforms ambitious ideas into market-defining digital products."
+        "bio": "Full-stack engineer with deep expertise in web development, blockchain architecture, and AI integration. Konstantinos leads the technical vision, turning ambitious ideas into polished, market-ready digital products."
       },
       {
         "name": "Kostas Tzoumpas",
-        "role": "Co-Founder & Blockchain Specialist",
+        "role": "Co-Founder & Blockchain Engineer",
         "location": "Zakynthos, Greece",
-        "bio": "With a strong foundation in mathematics and software engineering, Kostas specializes in Blockchain solutions and Backend development. He thrives on tackling new challenges and applying his expertise to innovative sectors."
+        "bio": "With a strong foundation in mathematics and software engineering, Kostas specializes in blockchain solutions and backend systems. He thrives on complex challenges and brings rigorous analytical thinking to every project."
       }
     ],
     "skills": "Technical Arsenal",
@@ -101,41 +102,58 @@
   },
   "projects": {
     "title": "Selected Work",
-    "subtitle": "Handpicked projects that showcase our craft and capabilities",
+    "subtitle": "Real-world projects that showcase our engineering craft and capabilities",
     "viewSite": "View Live",
     "items": [
       {
         "name": "DCAi",
         "year": "2026",
-        "description": "DCAi analyzes on-chain volatility, liquidity patterns, and market sentiment to determine optimal entry points. Each DCA execution is timed by AI, not arbitrary schedules.",
+        "description": "AI-powered DCA engine that analyzes on-chain volatility, liquidity patterns, and market sentiment to time every crypto investment. No more guesswork — every execution is data-driven.",
         "tech": [
           "Next.js",
           "Supabase",
-          "Stripe",
-          "Crypto Payments"
+          "Crypto",
+          "AI",
+          "Payments"
         ],
         "link": "https://dcai-mvx.vercel.app/",
-        "badge": "Winner of MultiversX Hackathon",
+        "badge": "Hackathon Winner",
         "badgeLink": "https://bon.multiversx.com/builders-track"
       },
       {
         "name": "Liquorix",
         "year": "2026",
-        "description": "Liquorix is an AI-driven yield optimizer that intelligently rebalances your EGLD between staking and lending protocols to maximize your returns while maintaining instant liquidity.",
+        "description": "AI-driven yield optimizer that intelligently rebalances your portfolio across staking and lending protocols to maximize returns while keeping instant liquidity.",
         "tech": [
           "Next.js",
           "MultiversX",
-          "TailwindCSS",
+          "Crypto",
+          "AI",
           "WebSocket"
         ],
         "link": "https://liquorix-mvx.vercel.app/",
-        "badge": "Runner up in MultiversX Hackathon",
+        "badge": "Hackathon Runner-Up",
+        "badgeLink": ""
+      },
+      {
+        "name": "ĀNESIS",
+        "year": "2026",
+        "description": "Premium apartment rental platform in Zakynthos, Greece. Full booking engine with availability calendar, Stripe payments, and a stunning guest experience.",
+        "tech": [
+          "Next.js",
+          "SQLite",
+          "TailwindCSS",
+          "Stripe",
+          "Booking Engine"
+        ],
+        "link": "https://www.anesisdeluxe.com",
+        "badge": "Top Rated",
         "badgeLink": ""
       },
       {
         "name": "YUMEI",
         "year": "2026",
-        "description": "AI COMIC ENGINE. Build entire comic books with the power of artificial intelligence.",
+        "description": "AI Comic Engine — create entire comic books with artificial intelligence. Generate characters, scenes, and storylines in minutes, not months.",
         "tech": [
           "Next.js",
           "MongoDB",
@@ -148,21 +166,23 @@
       {
         "name": "YABALITSA",
         "year": "2025",
-        "description": "Find and book football fields in Greece. Easy booking for 5x5, 6x6, 7x7, 8x8 pitches. Comprehensive field management for owners.",
+        "description": "Football field booking platform for Greece. Players discover and book 5x5 to 8x8 pitches instantly. Field owners get a complete management dashboard.",
         "tech": [
           "Next.js",
           "Supabase",
           "TailwindCSS",
-          "PostgreSQL"
+          "PostgreSQL",
+          "Stripe",
+          "Mobile App"
         ],
         "link": "https://www.yabalitsa.com/",
         "badge": "",
         "badgeLink": ""
       },
       {
-        "name": "BEARLYBANK",
+        "name": "Bearly Bank",
         "year": "2024",
-        "description": "Automated DeFi savings protocol. Schedule cryptocurrency payouts with military-grade security on MultiversX.",
+        "description": "Automated DeFi savings protocol on MultiversX. Schedule recurring crypto payouts with enterprise-grade smart contract security.",
         "tech": [
           "Next.js",
           "Smart Contracts",
@@ -173,9 +193,9 @@
         "badgeLink": ""
       },
       {
-        "name": "AVGOUSTE",
+        "name": "Avgouste",
         "year": "2023",
-        "description": "Premium medical practice website for an Acupuncture specialist. Clean, professional, conversion-optimized.",
+        "description": "Professional medical practice website for an acupuncture specialist. Clean design, fast performance, and conversion-optimized with full Schema markup for local SEO.",
         "tech": [
           "WordPress",
           "Custom Theme",
@@ -189,8 +209,8 @@
     ]
   },
   "contact": {
-    "title": "Start a Conversation",
-    "subtitle": "Let's discuss your next big idea. We respond within 24 hours.",
+    "title": "Let's Build Together",
+    "subtitle": "Tell us about your next project. We respond within 24 hours.",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
@@ -205,7 +225,7 @@
       "namePlaceholder": "John Smith",
       "emailPlaceholder": "john@company.com",
       "companyPlaceholder": "Your company",
-      "messagePlaceholder": "Tell us about your project..."
+      "messagePlaceholder": "Tell us about your project, goals, and timeline..."
     },
     "projectTypes": [
       "Web Application",
@@ -239,11 +259,12 @@
       "terms": "Terms"
     },
     "social": {
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "twitter": "Twitter"
+      "instagram": "Instagram",
+      "github": "GitHub"
     },
-    "language": "Language"
+    "language": "Language",
+    "langEn": "English",
+    "langEl": "Ελληνικά"
   },
   "validation": {
     "nameMin": "Name must be at least 2 characters",
@@ -252,17 +273,17 @@
     "sendFailed": "Failed to send message. Please try again later."
   },
   "metadata": {
-    "title": "VERTA | Premium Digital Agency - Web, Mobile, Web3 & AI Development",
+    "title": "VERTA | Digital Agency in Greece — Web, Mobile, Blockchain & AI Development",
     "titleTemplate": "%s | VERTA Digital Agency",
-    "description": "VERTA is an elite digital agency in Thessaloniki, Greece. We engineer exceptional web applications, mobile apps, blockchain DApps, and AI-powered solutions. 10+ years expertise. 50+ projects delivered.",
-    "ogTitle": "VERTA | Premium Digital Engineering & AI Studio",
-    "ogDescription": "Engineering digital excellence through high-performance web apps, mobile solutions, and custom AI integration.",
-    "twitterTitle": "VERTA | Premium Digital Engineering & AI Studio",
-    "twitterDescription": "Engineering digital excellence through high-performance web apps, mobile solutions, and custom AI integration.",
+    "description": "VERTA is a premium digital agency in Thessaloniki, Greece. We design and build high-performance web applications, mobile apps, blockchain solutions, and AI-powered products. 50+ projects delivered for clients worldwide.",
+    "ogTitle": "VERTA | Digital Engineering & AI Studio in Greece",
+    "ogDescription": "We build high-performance web apps, mobile products, blockchain solutions, and AI-powered features. 50+ projects delivered. Based in Greece, serving clients worldwide.",
+    "twitterTitle": "VERTA | Digital Engineering & AI Studio in Greece",
+    "twitterDescription": "We build high-performance web apps, mobile products, blockchain solutions, and AI-powered features. 50+ projects delivered. Based in Greece, serving clients worldwide.",
     "jsonLd": {
-      "organizationDescription": "Premium digital agency specializing in web development, mobile apps, blockchain, and AI solutions.",
-      "websiteDescription": "Premium digital agency for web, mobile, Web3, and AI development.",
-      "founderJobTitle": "Founder & Lead Developer"
+      "organizationDescription": "Premium digital agency specializing in custom web development, mobile app development, blockchain engineering, and AI-powered solutions. Based in Thessaloniki, Greece.",
+      "websiteDescription": "VERTA — Digital agency for web, mobile, Web3, and AI development, serving startups and enterprises worldwide.",
+      "founderJobTitle": "Co-Founder & Lead Engineer"
     }
   },
   "accessibility": {

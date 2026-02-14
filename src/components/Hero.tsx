@@ -105,7 +105,7 @@ export default function Hero() {
             {/* Right - Stats */}
             <div className="flex gap-16">
               <Stat value="50+" label={t('hero.stats.projects')} />
-              <Stat value="10+" label={t('hero.stats.years')} />
+              <Stat value="8+" label={t('hero.stats.years')} />
               <Stat value="30+" label={t('hero.stats.clients')} />
             </div>
           </motion.div>
@@ -127,7 +127,7 @@ export default function Hero() {
             transition={{ duration: 2, repeat: Infinity }}
           >
             <ArrowDownRight className="w-5 h-5" />
-            <span className="text-xs uppercase tracking-widest">{t('nav.home')}</span>
+            <span className="text-xs uppercase tracking-widest">{t('hero.scrollIndicator')}</span>
           </motion.button>
           <div className="hidden lg:flex items-center gap-8">
             <span className="text-xs text-dark-600">{t('about.founders.0.location')}</span>

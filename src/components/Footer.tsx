@@ -23,9 +23,8 @@ export default function Footer() {
   };
 
   const links = [
-    { label: t('footer.social.github'), href: "https://github.com/verta" },
-    { label: t('footer.social.linkedin'), href: "https://linkedin.com/company/verta" },
-    { label: t('footer.social.twitter'), href: "https://twitter.com/verta" },
+    { label: t('footer.social.instagram'), href: "https://www.instagram.com/verta.builders" },
+    { label: t('footer.social.github'), href: "https://github.com/Verta-Builders" },
   ];
 
   return (
@@ -72,21 +71,21 @@ export default function Footer() {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="absolute top-full left-0 p-2 mb-2 bg-dark-950 border border-dark-700 rounded-lg overflow-hidden shadow-xl min-w-[160px] z-20"
+                  className="absolute top-full left-0 p-2 mb-2 bg-dark-950 border border-dark-700 rounded-lg overflow-hidden shadow-xl min-w-[180px] z-20 whitespace-nowrap"
                 >
                   <button
                     onClick={() => switchLocale('en')}
                     className={`block w-full px-4 py-3 text-left text-xs uppercase tracking-wider transition-colors ${locale === 'en' ? 'text-white bg-dark-800' : 'text-dark-400 hover:text-white hover:bg-dark-800'
                       }`}
                   >
-                    🇬🇧 English
+                    🇬🇧 {t('footer.langEn')}
                   </button>
                   <button
                     onClick={() => switchLocale('el')}
                     className={`block w-full px-4 py-3 text-left text-xs uppercase tracking-wider transition-colors ${locale === 'el' ? 'text-white bg-dark-800' : 'text-dark-400 hover:text-white hover:bg-dark-800'
                       }`}
                   >
-                    🇬🇷 Ελληνικά
+                    🇬🇷 {t('footer.langEl')}
                   </button>
                 </motion.div>
               )}

@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "dapp development",
       "AI development",
       "digital agency Greece",
-      "software development Thessaloniki",
+      "software development",
       "Next.js development",
       "React development",
       "full-stack development",
@@ -181,11 +181,6 @@ export default async function RootLayout({
             name: "University of Patras",
           },
         },
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Thessaloniki",
-          addressCountry: "Greece",
-        },
         sameAs: [
           "https://github.com/verta",
           "https://linkedin.com/company/verta",
@@ -214,20 +209,8 @@ export default async function RootLayout({
         name: "VERTA Digital Agency",
         image: "https://verta.com/og-image.png",
         url: "https://verta.com",
-        telephone: "+30-XXX-XXX-XXXX",
         email: "info@verta.builders",
-        priceRange: "€€€",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Thessaloniki",
-          addressRegion: "Central Macedonia",
-          addressCountry: "GR",
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: 40.6401,
-          longitude: 22.9444,
-        },
+        priceRange: "€€",
         areaServed: [
           { "@type": "Country", name: "Greece" },
           { "@type": "Continent", name: "Europe" },

@@ -53,7 +53,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/Verta-11.png"
+                src="/brand/verta-full-logo-no-bg.png"
                 alt="VERTA Digital Agency"
                 width={160}
                 height={48}

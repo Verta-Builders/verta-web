@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://verta.com/sitemap.xml
+Sitemap: https://verta.builders/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

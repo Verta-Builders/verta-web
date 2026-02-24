@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://verta.com</loc>
+    <loc>https://verta.builders</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- Services Section -->
   <url>
-    <loc>https://verta.com/#services</loc>
+    <loc>https://verta.builders/#services</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
   
   <!-- About Section -->
   <url>
-    <loc>https://verta.com/#about</loc>
+    <loc>https://verta.builders/#about</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -30,7 +30,7 @@
   
   <!-- Projects Section -->
   <url>
-    <loc>https://verta.com/#projects</loc>
+    <loc>https://verta.builders/#projects</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -38,7 +38,7 @@
   
   <!-- Contact Section -->
   <url>
-    <loc>https://verta.com/#contact</loc>
+    <loc>https://verta.builders/#contact</loc>
     <lastmod>2024-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

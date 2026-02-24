@@ -122,7 +122,7 @@ export default function Footer() {
         <div className="py-8 border-t border-dark-800 flex flex-col lg:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <Image
-            src="/Verta-8.png"
+            src="/brand/verta-logo-no-bg.png"
             alt="VERTA Digital Agency"
             width={140}
             height={42}

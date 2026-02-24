@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    metadataBase: new URL("https://verta.com"),
+    metadataBase: new URL("https://verta.builders"),
     title: {
       default: t('title'),
       template: t('titleTemplate'),
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "startup development",
       "SaaS development",
     ],
-    authors: [{ name: "Konstantinos Lepidas", url: "https://verta.com" }],
+    authors: [{ name: "VERTA Digital Agency" }],
     creator: "VERTA Digital Agency",
     publisher: "VERTA",
     formatDetection: {
@@ -88,16 +88,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: locale === 'el' ? 'el_GR' : 'en_US',
-      url: "https://verta.com",
+      url: "https://verta.builders",
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: "VERTA",
+      images: [
+        {
+          url: "brand/verta-image.png",
+          width: 1359,
+          height: 785,
+          alt: "VERTA Digital Agency",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t('twitterTitle'),
       description: t('twitterDescription'),
       creator: "@verta",
+      images: ["brand/verta-image.png"],
     },
     robots: {
       index: true,
@@ -113,16 +122,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     alternates: {
-      canonical: "https://verta.com",
+      canonical: "https://verta.builders",
       languages: {
-        'en': 'https://verta.com',
-        'el': 'https://verta.com/el',
+        'en': 'https://verta.builders',
+        'el': 'https://verta.builders/el',
       },
     },
     verification: {
       google: "your-google-verification-code",
     },
-
+    icons: {
+      icon: "/icon.png",
+    },
     manifest: "/manifest.json",
     other: {
       "apple-mobile-web-app-capable": "yes",
@@ -160,13 +171,13 @@ export default async function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://verta.com/#organization",
+        "@id": "https://verta.builders/#organization",
         name: "VERTA",
         alternateName: "VERTA Digital Agency",
-        url: "https://verta.com",
+        url: "https://verta.builders",
         logo: {
           "@type": "ImageObject",
-          url: "https://verta.com/logo.png",
+          url: "https://verta.builders/logo.png",
           width: 512,
           height: 512,
         },
@@ -195,20 +206,20 @@ export default async function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://verta.com/#website",
-        url: "https://verta.com",
+        "@id": "https://verta.builders/#website",
+        url: "https://verta.builders",
         name: "VERTA Digital Agency",
         publisher: {
-          "@id": "https://verta.com/#organization",
+          "@id": "https://verta.builders/#organization",
         },
         description: t('jsonLd.websiteDescription'),
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://verta.com/#service",
+        "@id": "https://verta.builders/#service",
         name: "VERTA Digital Agency",
-        image: "https://verta.com/og-image.png",
-        url: "https://verta.com",
+        image: "https://verta.builders/og-image.png",
+        url: "https://verta.builders",
         email: "info@verta.builders",
         priceRange: "€€",
         areaServed: [

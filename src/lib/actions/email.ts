@@ -100,7 +100,7 @@ ${validatedData.message}
 }
 
 export async function sendStrategyEmail(
-  data: {
+  strategyData: {
     sections: {
       title: string;
       questions: { label: string; answer: string }[];
@@ -115,7 +115,7 @@ export async function sendStrategyEmail(
           <p style="color: #666; font-size: 14px; margin: 10px 0 0 0;">New project strategy framework details received.</p>
         </header>
 
-        ${data.sections.map(section => `
+        ${strategyData.sections.map(section => `
           <div style="margin-bottom: 40px;">
             <h2 style="font-size: 18px; color: #000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; background-color: #f9f9f9; padding: 10px 15px; border-left: 4px solid #000;">
               ${section.title}
@@ -141,17 +141,23 @@ export async function sendStrategyEmail(
       </div>
     `;
 
-    await transporter.sendMail({
-      from: `"VERTA Strategy" <${process.env.SMTP_FROM}>`,
-      to: process.env.CONTACT_EMAIL,
+    // Send the email using Resend
+    const { data, error } = await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || "noreply@verta.builders",
+      to: process.env.CONTACT_EMAIL || "info@verta.builders",
       subject: `Strategy Questionnaire: ${new Date().toLocaleDateString('el-GR')}`,
       html: htmlContent,
     });
 
-    console.log("Strategy email sent successfully.");
+    if (error) {
+      console.error("Resend error (Strategy):", error);
+      return { success: false, error: "Failed to send strategy details." };
+    }
+
+    console.log("Strategy email sent successfully via Resend. ID:", data?.id);
     return { success: true };
   } catch (error) {
     console.error("Error sending strategy email:", error);
-    return { success: false, error: "Failed to send strategy details." };
+    return { success: false, error: "An unexpected error occurred." };
   }
 }

@@ -98,3 +98,60 @@ ${validatedData.message}
     return { success: false, error: messages.sendFailed };
   }
 }
+
+export async function sendStrategyEmail(
+  data: {
+    sections: {
+      title: string;
+      questions: { label: string; answer: string }[];
+    }[];
+  }
+) {
+  try {
+    const htmlContent = `
+      <div style="font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; background-color: #ffffff; color: #1a1a1a;">
+        <header style="border-bottom: 2px solid #f0f0f0; margin-bottom: 40px; padding-bottom: 20px;">
+          <h1 style="font-size: 24px; margin: 0; color: #000;">Strategy Questionnaire Submission</h1>
+          <p style="color: #666; font-size: 14px; margin: 10px 0 0 0;">New project strategy framework details received.</p>
+        </header>
+
+        ${data.sections.map(section => `
+          <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 18px; color: #000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; background-color: #f9f9f9; padding: 10px 15px; border-left: 4px solid #000;">
+              ${section.title}
+            </h2>
+            <div style="padding-left: 15px;">
+              ${section.questions.map(q => `
+                <div style="margin-bottom: 25px;">
+                  <h3 style="font-size: 13px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                    ${q.label}
+                  </h3>
+                  <div style="font-size: 16px; color: #333; line-height: 1.6; background-color: #fff; border: 1px solid #f0f0f0; padding: 15px; border-radius: 8px;">
+                    ${q.answer || '<i style="color: #ccc;">No answer provided</i>'}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `).join('')}
+
+        <footer style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #f0f0f0; font-size: 12px; color: #999; text-align: center;">
+          <p>This is an automated message from the VERTA Strategy Framework module.</p>
+        </footer>
+      </div>
+    `;
+
+    await transporter.sendMail({
+      from: `"VERTA Strategy" <${process.env.SMTP_FROM}>`,
+      to: process.env.CONTACT_EMAIL,
+      subject: `Strategy Questionnaire: ${new Date().toLocaleDateString('el-GR')}`,
+      html: htmlContent,
+    });
+
+    console.log("Strategy email sent successfully.");
+    return { success: true };
+  } catch (error) {
+    console.error("Error sending strategy email:", error);
+    return { success: false, error: "Failed to send strategy details." };
+  }
+}

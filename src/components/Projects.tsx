@@ -72,23 +72,38 @@ export default function Projects() {
                   {/* Name */}
                   <div className="flex flex-col items-start gap-2">
                     {t(`projects.items.${index}.badge`) && (
-                      <a
-                        href={t(`projects.items.${index}.badgeLink`) || undefined}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`
-                          pointer-events-auto
-                          inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider font-bold border transition-all
-                          ${t(`projects.items.${index}.badge`).includes("Winner") || t(`projects.items.${index}.badge`).includes("Νικητής")
-                            ? "border-yellow-500/50 text-yellow-500 bg-yellow-500/10 hover:bg-yellow-500/20"
-                            : "border-zinc-500/50 text-zinc-400 bg-zinc-500/10 hover:bg-zinc-500/20"
-                          }
-                          ${!t(`projects.items.${index}.badgeLink`) ? "pointer-events-none" : "hover:border-yellow-500"}
-                        `}
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
-                        {t(`projects.items.${index}.badge`)}
-                      </a>
+                      t(`projects.items.${index}.badgeLink`) ? (
+                        <a
+                          href={t(`projects.items.${index}.badgeLink`)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`
+                            pointer-events-auto
+                            inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider font-bold border transition-all hover:border-yellow-500
+                            ${t(`projects.items.${index}.badge`).includes("Winner") || t(`projects.items.${index}.badge`).includes("Νικητής")
+                              ? "border-yellow-500/50 text-yellow-500 bg-yellow-500/10 hover:bg-yellow-500/20"
+                              : "border-zinc-500/50 text-zinc-400 bg-zinc-500/10 hover:bg-zinc-500/20"
+                            }
+                          `}
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
+                          {t(`projects.items.${index}.badge`)}
+                        </a>
+                      ) : (
+                        <span
+                          className={`
+                            pointer-events-none
+                            inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] uppercase tracking-wider font-bold border transition-all
+                            ${t(`projects.items.${index}.badge`).includes("Winner") || t(`projects.items.${index}.badge`).includes("Νικητής")
+                              ? "border-yellow-500/50 text-yellow-500 bg-yellow-500/10 hover:bg-yellow-500/20"
+                              : "border-zinc-500/50 text-zinc-400 bg-zinc-500/10 hover:bg-zinc-500/20"
+                            }
+                          `}
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trophy"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" /><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" /><path d="M4 22h16" /><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" /><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" /><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg>
+                          {t(`projects.items.${index}.badge`)}
+                        </span>
+                      )
                     )}
                     <h3 className="text-3xl lg:text-5xl font-display font-bold text-white group-hover:text-dark-300 transition-colors">
                       {t(`projects.items.${index}.name`)}

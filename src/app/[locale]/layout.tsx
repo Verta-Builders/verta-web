@@ -122,7 +122,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     alternates: {
-      canonical: "https://verta.builders",
+      canonical: locale === 'el' ? 'https://verta.builders/el' : 'https://verta.builders',
       languages: {
         'en': 'https://verta.builders',
         'el': 'https://verta.builders/el',

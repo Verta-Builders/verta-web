@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    metadataBase: new URL("https://verta.builders"),
+    metadataBase: new URL("https://www.verta.builders"),
     title: {
       default: t('title'),
       template: t('titleTemplate'),
@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: locale === 'el' ? 'el_GR' : 'en_US',
-      url: "https://verta.builders",
+      url: "https://www.verta.builders",
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: "VERTA",
@@ -122,10 +122,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     alternates: {
-      canonical: locale === 'el' ? 'https://verta.builders/el' : 'https://verta.builders',
+      canonical: locale === 'el' ? 'https://www.verta.builders/el' : 'https://www.verta.builders',
       languages: {
-        'en': 'https://verta.builders',
-        'el': 'https://verta.builders/el',
+        'en': 'https://www.verta.builders',
+        'el': 'https://www.verta.builders/el',
       },
     },
     verification: {
@@ -171,13 +171,13 @@ export default async function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://verta.builders/#organization",
+        "@id": "https://www.verta.builders/#organization",
         name: "VERTA",
         alternateName: "VERTA Digital Agency",
-        url: "https://verta.builders",
+        url: "https://www.verta.builders",
         logo: {
           "@type": "ImageObject",
-          url: "https://verta.builders/logo.png",
+          url: "https://www.verta.builders/logo.png",
           width: 512,
           height: 512,
         },
@@ -206,20 +206,20 @@ export default async function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://verta.builders/#website",
-        url: "https://verta.builders",
+        "@id": "https://www.verta.builders/#website",
+        url: "https://www.verta.builders",
         name: "VERTA Digital Agency",
         publisher: {
-          "@id": "https://verta.builders/#organization",
+          "@id": "https://www.verta.builders/#organization",
         },
         description: t('jsonLd.websiteDescription'),
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://verta.builders/#service",
+        "@id": "https://www.verta.builders/#service",
         name: "VERTA Digital Agency",
-        image: "https://verta.builders/og-image.png",
-        url: "https://verta.builders",
+        image: "https://www.verta.builders/og-image.png",
+        url: "https://www.verta.builders",
         email: "info@verta.builders",
         priceRange: "€€",
         areaServed: [

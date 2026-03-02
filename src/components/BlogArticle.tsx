@@ -28,7 +28,7 @@ export default function BlogArticle({ post }: Props) {
         locale === "el"
             ? "Ας συζητήσουμε το επόμενο έργο σου. Απαντάμε εντός 24 ωρών."
             : "Let's discuss your next project. We respond within 24 hours.";
-    const ctaBtn = locale === "el" ? "Ξεκίνα Έργο" : "Start a Project";
+    const ctaBtn = locale === "el" ? "Ξεκίνα Τώρα" : "Start a Project";
     const relatedLabel = locale === "el" ? "Σχετικά Άρθρα" : "Related Articles";
 
     return (

@@ -155,3 +155,93 @@ img { max-width: 100%; height: auto; display: block; }
 @media (pointer: coarse) {
   button, a, input, select, textarea { min-height: 44px; min-width: 44px; }
 }
+
+/* Blog Article Prose */
+.prose-blog {
+  color: var(--color-dark-300);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.prose-blog h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.prose-blog h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-dark-100);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-blog p {
+  margin-bottom: 1.5rem;
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose-blog ul { list-style-type: disc; }
+.prose-blog ol { list-style-type: decimal; }
+
+.prose-blog li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.prose-blog strong {
+  color: var(--color-dark-100);
+  font-weight: 600;
+}
+
+.prose-blog em {
+  color: var(--color-dark-200);
+  font-style: italic;
+}
+
+.prose-blog a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.prose-blog a:hover {
+  color: var(--color-dark-300);
+}
+
+.prose-blog blockquote {
+  border-left: 3px solid var(--color-dark-600);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--color-dark-900);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose-blog blockquote p {
+  margin-bottom: 0;
+  color: var(--color-dark-200);
+  font-style: italic;
+  font-size: 1.0625rem;
+}
+
+.prose-blog code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  background: var(--color-dark-800);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  color: var(--color-dark-200);
+}
+

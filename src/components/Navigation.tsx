@@ -4,12 +4,18 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useLoading } from "./LoadingProvider";
 
 export default function Navigation() {
   const { isLoading } = useLoading();
   const t = useTranslations();
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -19,19 +25,46 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const homeHref = locale === "el" ? "/el" : "/";
+  const blogHref = locale === "el" ? "/el/blog" : "/blog";
+
+  // Check if we are currently on the homepage
+  const isHomePage = pathname === "/" || pathname === "/el";
+
   const navItems = [
-    { href: "#services", label: t('nav.services') },
-    { href: "#about", label: t('nav.about') },
-    { href: "#projects", label: t('nav.projects') },
-    { href: "#contact", label: t('nav.contact') },
+    { href: "#services", label: t("nav.services") },
+    { href: "#about", label: t("nav.about") },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#contact", label: t("nav.contact") },
   ];
 
-  const scrollTo = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  /**
+   * Smart navigation:
+   * - On homepage → smooth scroll to the section
+   * - On any other page → navigate to home page with hash, then browser scrolls
+   */
+  const handleNavClick = (hash: string) => {
     setIsMobileMenuOpen(false);
+
+    if (isHomePage) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push(`${homeHref}${hash}`);
+    }
+  };
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+
+    if (isHomePage) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      router.push(homeHref);
+    }
   };
 
   return (
@@ -45,10 +78,10 @@ export default function Navigation() {
       >
         <nav className="max-w-[1600px] mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20 lg:h-24">
-            {/* Logo */}
+            {/* Logo — always goes home */}
             <motion.a
-              href="#home"
-              onClick={(e) => { e.preventDefault(); scrollTo("#home"); }}
+              href={homeHref}
+              onClick={handleLogoClick}
               className="flex items-center"
               whileHover={{ scale: 1.02 }}
             >
@@ -67,32 +100,42 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <motion.button
                   key={item.href}
-                  onClick={() => scrollTo(item.href)}
+                  onClick={() => handleNavClick(item.href)}
                   className="text-sm text-dark-400 hover:text-white transition-colors uppercase tracking-widest"
                   whileHover={{ y: -2 }}
                 >
                   {item.label}
                 </motion.button>
               ))}
+              <Link
+                href={blogHref}
+                className={`text-sm transition-colors uppercase tracking-widest ${pathname.includes("/blog")
+                    ? "text-white"
+                    : "text-dark-400 hover:text-white"
+                  }`}
+              >
+                Blog
+              </Link>
             </div>
 
-            {/* Actions */}
+            {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-6">
               <motion.button
-                onClick={() => scrollTo("#contact")}
+                onClick={() => handleNavClick("#contact")}
                 className="px-6 py-3 bg-white text-dark-950 text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-dark-200 transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {t('hero.cta')}
+                {t("hero.cta")}
               </motion.button>
             </div>
 
-            {/* Mobile Menu Toggle */}
+            {/* Mobile Toggle */}
             <div className="flex lg:hidden items-center gap-4">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="w-10 h-10 flex items-center justify-center text-white"
+                aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -114,7 +157,7 @@ export default function Navigation() {
               {navItems.map((item, i) => (
                 <motion.button
                   key={item.href}
-                  onClick={() => scrollTo(item.href)}
+                  onClick={() => handleNavClick(item.href)}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
@@ -123,14 +166,27 @@ export default function Navigation() {
                   {item.label}
                 </motion.button>
               ))}
-              <motion.button
-                onClick={() => scrollTo("#contact")}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
+              >
+                <Link
+                  href={blogHref}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-4xl font-display font-bold text-white hover:text-dark-400 transition-colors"
+                >
+                  Blog
+                </Link>
+              </motion.div>
+              <motion.button
+                onClick={() => handleNavClick("#contact")}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
                 className="mt-8 px-8 py-4 bg-white text-dark-950 text-sm font-semibold uppercase tracking-wider rounded-full"
               >
-                {t('hero.cta')}
+                {t("hero.cta")}
               </motion.button>
             </div>
           </motion.div>

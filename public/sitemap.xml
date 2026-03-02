@@ -1,48 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Homepage -->
+
+  <!-- Homepage EN -->
   <url>
-    <loc>https://verta.builders</loc>
-    <lastmod>2024-12-24</lastmod>
+    <loc>https://www.verta.builders</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el"/>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Services Section -->
+
+  <!-- Homepage EL -->
   <url>
-    <loc>https://verta.builders/#services</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- About Section -->
-  <url>
-    <loc>https://verta.builders/#about</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Projects Section -->
-  <url>
-    <loc>https://verta.builders/#projects</loc>
-    <lastmod>2024-12-24</lastmod>
+    <loc>https://www.verta.builders/el</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el"/>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Contact Section -->
+
+  <!-- Blog Index EN -->
   <url>
-    <loc>https://verta.builders/#contact</loc>
-    <lastmod>2024-12-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.verta.builders/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog"/>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-</urlset>
 
+  <!-- Blog Index EL -->
+  <url>
+    <loc>https://www.verta.builders/el/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog"/>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Article: GEO -->
+  <url>
+    <loc>https://www.verta.builders/blog/what-is-geo-generative-engine-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/what-is-geo-generative-engine-optimization"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/what-is-geo-generative-engine-optimization"/>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.verta.builders/el/blog/what-is-geo-generative-engine-optimization</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/what-is-geo-generative-engine-optimization"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/what-is-geo-generative-engine-optimization"/>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article: Custom Web App -->
+  <url>
+    <loc>https://www.verta.builders/blog/why-your-business-needs-custom-web-app-2025</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/why-your-business-needs-custom-web-app-2025"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/why-your-business-needs-custom-web-app-2025"/>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.verta.builders/el/blog/why-your-business-needs-custom-web-app-2025</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/why-your-business-needs-custom-web-app-2025"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/why-your-business-needs-custom-web-app-2025"/>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article: AI Integration -->
+  <url>
+    <loc>https://www.verta.builders/blog/ai-integration-modern-business-applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/ai-integration-modern-business-applications"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/ai-integration-modern-business-applications"/>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.verta.builders/el/blog/ai-integration-modern-business-applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/ai-integration-modern-business-applications"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/ai-integration-modern-business-applications"/>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article: Blockchain -->
+  <url>
+    <loc>https://www.verta.builders/blog/blockchain-web3-development-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/blockchain-web3-development-for-startups"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/blockchain-web3-development-for-startups"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.verta.builders/el/blog/blockchain-web3-development-for-startups</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/blockchain-web3-development-for-startups"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/blockchain-web3-development-for-startups"/>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article: Digital Agency Greece -->
+  <url>
+    <loc>https://www.verta.builders/blog/how-to-choose-digital-agency-greece</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/how-to-choose-digital-agency-greece"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/how-to-choose-digital-agency-greece"/>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.verta.builders/el/blog/how-to-choose-digital-agency-greece</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.verta.builders/blog/how-to-choose-digital-agency-greece"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.verta.builders/el/blog/how-to-choose-digital-agency-greece"/>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

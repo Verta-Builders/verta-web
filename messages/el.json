@@ -136,6 +136,19 @@
         "badgeLink": ""
       },
       {
+        "name": "GotchAI",
+        "year": "2026",
+        "description": "X-Ray Vision. Μην αφήνετε τα ψιλά γράμματα να αδειάζουν τον λογαριασμό σας. Το AI μας αποκαλύπτει κρυφές χρεώσεις και ληστρικούς όρους σε δευτερόλεπτα.",
+        "tech": [
+          "Next.js",
+          "Grok AI",
+          "Financial"
+        ],
+        "link": "https://gotchai.vercel.app/",
+        "badge": "Νικητής Encode Hackathon ($5.000) - Financial Health",
+        "badgeLink": ""
+      },
+      {
         "name": "ĀNESIS",
         "year": "2026",
         "description": "Premium πλατφόρμα ενοικίασης διαμερισμάτων στη Ζάκυνθο. Πλήρης μηχανή κρατήσεων με ημερολόγιο διαθεσιμότητας, πληρωμές μέσω Stripe και εξαιρετική εμπειρία φιλοξενίας.",
@@ -177,19 +190,6 @@
         ],
         "link": "https://www.yabalitsa.com/",
         "badge": "",
-        "badgeLink": ""
-      },
-      {
-        "name": "GotchAI",
-        "year": "2025",
-        "description": "X-Ray Vision. Μην αφήνετε τα ψιλά γράμματα να αδειάζουν τον λογαριασμό σας. Το AI μας αποκαλύπτει κρυφές χρεώσεις και ληστρικούς όρους σε δευτερόλεπτα.",
-        "tech": [
-          "Next.js",
-          "Grok AI",
-          "Financial"
-        ],
-        "link": "https://gotchai.vercel.app/",
-        "badge": "Νικητής Encode Hackathon ($5.000) - Financial Health",
         "badgeLink": ""
       },
       {

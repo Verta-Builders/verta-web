@@ -180,16 +180,16 @@
         "badgeLink": ""
       },
       {
-        "name": "Bearly Bank",
-        "year": "2024",
-        "description": "Automated DeFi savings protocol on MultiversX. Schedule recurring crypto payouts with enterprise-grade smart contract security.",
+        "name": "GotchAI",
+        "year": "2025",
+        "description": "X-Ray Vision. Don't let fine print drain your bank account. Our AI exposes hidden fees and predatory clauses in seconds.",
         "tech": [
           "Next.js",
-          "Smart Contracts",
-          "MultiversX SDK"
+          "Grok AI",
+          "Financial"
         ],
-        "link": "https://bbank-eight.vercel.app/",
-        "badge": "",
+        "link": "https://gotchai.vercel.app/",
+        "badge": "Encode Winner - Financial Health",
         "badgeLink": ""
       },
       {

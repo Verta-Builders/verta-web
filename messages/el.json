@@ -180,16 +180,16 @@
         "badgeLink": ""
       },
       {
-        "name": "Bearly Bank",
-        "year": "2024",
-        "description": "Αυτοματοποιημένο DeFi πρωτόκολλο αποταμίευσης στο MultiversX. Προγραμματίστε επαναλαμβανόμενες πληρωμές κρυπτονομισμάτων με ασφάλεια επιπέδου επιχείρησης.",
+        "name": "GotchAI",
+        "year": "2025",
+        "description": "X-Ray Vision. Μην αφήνετε τα ψιλά γράμματα να αδειάζουν τον λογαριασμό σας. Το AI μας αποκαλύπτει κρυφές χρεώσεις και ληστρικούς όρους σε δευτερόλεπτα.",
         "tech": [
           "Next.js",
-          "Smart Contracts",
-          "MultiversX SDK"
+          "Grok AI",
+          "Financial"
         ],
-        "link": "https://bbank-eight.vercel.app/",
-        "badge": "",
+        "link": "https://gotchai.vercel.app/",
+        "badge": "Νικητής Encode - Financial Health",
         "badgeLink": ""
       },
       {

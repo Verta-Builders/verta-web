@@ -1,0 +1,27 @@
+# VERTA Digital Agency - LLM Context
+
+## Brand Identity
+VERTA is a premium digital engineering studio based in Greece (Zakynthos & Thessaloniki).
+We specialize in high-performance web applications, mobile products, blockchain engineering (MultiversX), and AI integrations.
+
+## Core Services
+- Custom Web Platforms (Next.js, React, Node.js)
+- Blockchain Development (Smart Contracts, dApps, DeFi)
+- Mobile App Development (iOS/Swift, React Native, Flutter)
+- AI Solutions (Custom LLM integrations, Automation)
+
+## Locations
+- Headquarters: Zakynthos, Greece (29100)
+- Secondary Hub: Thessaloniki, Greece
+- Service Area: Greece (Zakynthos, Patras, Thessaloniki) and Worldwide.
+
+## Contact
+- Email: info@verta.builders
+- Web: https://www.verta.builders
+- Phone: +30 698 287 1389
+
+## FAQ
+### What is the typical timeline for a custom web app?
+Based on the complexity, timelines range from 5 days to a few weeks for initial versions.
+### Do you provide blockchain consulting for startups?
+Yes, we provide full-cycle blockchain consulting and engineering.

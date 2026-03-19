@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <About />
         <Projects />
         <Contact />
+        <FAQ />
       </main>
       
       <Footer />

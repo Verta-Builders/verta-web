@@ -129,7 +129,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     verification: {
-      google: "your-google-verification-code",
+      google: "thfqbWL1pGnRUzQtNzP5Xhu9Ewwm626dWd52k7fP4yM",
     },
     icons: {
       icon: "/icon.png",
@@ -208,59 +208,95 @@ export default async function RootLayout({
         "@type": "WebSite",
         "@id": "https://www.verta.builders/#website",
         url: "https://www.verta.builders",
-        name: "VERTA Digital Agency",
+        name: "VERTA",
+        alternateName: "VERTA Digital Agency",
         publisher: {
           "@id": "https://www.verta.builders/#organization",
         },
         description: t('jsonLd.websiteDescription'),
+        inLanguage: ["en", "el"],
       },
       {
-        "@type": "ProfessionalService",
-        "@id": "https://www.verta.builders/#service",
-        name: "VERTA Digital Agency",
+        "@type": "LocalBusiness",
+        "@id": "https://www.verta.builders/#localbusiness",
+        name: "VERTA Digital Agency - Zakynthos HQ",
         image: "https://www.verta.builders/og-image.png",
         url: "https://www.verta.builders",
+        telephone: "+306982871389",
         email: "info@verta.builders",
         priceRange: "€€",
-        areaServed: [
-          { "@type": "Country", name: "Greece" },
-          { "@type": "Continent", name: "Europe" },
-          { "@type": "Place", name: "Worldwide" },
-        ],
-        serviceType: [
-          "Web Development",
-          "Mobile App Development",
-          "Blockchain Development",
-          "AI Development",
-          "UI/UX Design",
-          "E-commerce Development",
-        ],
-        knowsAbout: [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Node.js",
-          "Swift",
-          "Blockchain",
-          "MultiversX",
-          "Smart Contracts",
-          "Machine Learning",
-          "WordPress",
-        ],
+        address: {
+          "@type": "PostalAddress",
+          "streetAddress": "",
+          "addressLocality": "Zakynthos",
+          "postalCode": "29100",
+          "addressCountry": "GR"
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          "latitude": "37.7833",
+          "longitude": "20.9000"
+        },
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           opens: "09:00",
           closes: "18:00",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: "30",
-          bestRating: "5",
-          worstRating: "1",
-        },
+        areaServed: [
+          { "@type": "City", "name": "Zakynthos" },
+          { "@type": "City", "name": "Thessaloniki" },
+          { "@type": "City", "name": "Patras" },
+          { "@type": "Country", "name": "Greece" }
+        ],
+        serviceType: [
+          "Web Development",
+          "Mobile App Development",
+          "Blockchain Development",
+          "AI Development"
+        ]
       },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.verta.builders/#thessaloniki",
+        name: "VERTA Digital Agency - Thessaloniki Hub",
+        url: "https://www.verta.builders",
+        address: {
+          "@type": "PostalAddress",
+          "addressLocality": "Thessaloniki",
+          "addressCountry": "GR"
+        },
+        telephone: "+306982871389"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the typical timeline for a custom web app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Based on the project complexity, timelines typically range from 5 days to a few weeks for a production-ready MVP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide blockchain consulting for startups?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we specialize in blockchain engineering and strategic consulting for Web3 startups, particularly on the MultiversX ecosystem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is VERTA Digital Agency located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are headquartered in Zakynthos, with a secondary engineering hub in Thessaloniki, Greece. We serve clients across Patras and throughout Greece and the world."
+            }
+          }
+        ]
+      }
     ],
   };
 

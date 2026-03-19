@@ -56,7 +56,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[12vw] lg:text-[10vw] font-display font-bold leading-[0.85] tracking-tighter"
+              className="text-[12vw] lg:text-[8vw] font-display font-bold leading-[0.85] tracking-tighter"
             >
               <span className="block text-white uppercase">{t('hero.title1')}</span>
             </motion.h1>
@@ -64,7 +64,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[12vw] lg:text-[10vw] font-display font-bold leading-[0.85] tracking-tighter"
+              className="text-[12vw] lg:text-[8vw] font-display font-bold leading-[0.85] tracking-tighter"
             >
               <span className="block text-dark-600 uppercase">{t('hero.title2')}</span>
             </motion.h1>
@@ -72,7 +72,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[12vw] lg:text-[10vw] font-display font-bold leading-[0.85] tracking-tighter"
+              className="text-[12vw] lg:text-[8vw] font-display font-bold leading-[0.85] tracking-tighter"
             >
               <span className="block text-white uppercase">{t('hero.title3')}</span>
             </motion.h1>
@@ -117,7 +117,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="relative z-10 pb-12 px-6 lg:px-12"
+        className="relative z-10 pb-12 px-6 lg:px-12 mt-10"
       >
         <div className="max-w-[1600px] mx-auto flex items-center justify-between">
           <motion.button

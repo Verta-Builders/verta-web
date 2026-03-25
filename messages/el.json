@@ -164,6 +164,20 @@
         "badgeLink": ""
       },
       {
+        "name": "Mediterraneo Solar",
+        "year": "2024",
+        "description": "Πλατφόρμα ανανεώσιμων πηγών ενέργειας στο Αλικάντε της Ισπανίας. Γρήγορη, σύγχρονη υποδομή για εγκαταστάσεις φωτοβολταϊκών, προβάλλοντας λύσεις καθαρής ενέργειας με κομψό, responsive σχεδιασμό.",
+        "tech": [
+          "Next.js",
+          "React",
+          "TailwindCSS",
+          "SEO"
+        ],
+        "link": "https://mediterraneosolar.com/",
+        "badge": "",
+        "badgeLink": ""
+      },
+      {
         "name": "YUMEI",
         "year": "2026",
         "description": "AI Comic Engine — δημιουργήστε ολόκληρα κόμικς με τεχνητή νοημοσύνη. Χαρακτήρες, σκηνές και ιστορίες σε λεπτά, όχι σε μήνες.",

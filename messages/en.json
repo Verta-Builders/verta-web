@@ -164,6 +164,20 @@
         "badgeLink": ""
       },
       {
+        "name": "Mediterraneo Solar",
+        "year": "2024",
+        "description": "Renewable energy platform in Alicante, Spain. Fast, modern infrastructure for solar panel installations, showcasing clean energy solutions with an elegant, responsive design.",
+        "tech": [
+          "Next.js",
+          "React",
+          "TailwindCSS",
+          "SEO"
+        ],
+        "link": "https://mediterraneosolar.com/",
+        "badge": "",
+        "badgeLink": ""
+      },
+      {
         "name": "YUMEI",
         "year": "2026",
         "description": "AI Comic Engine — create entire comic books with artificial intelligence. Generate characters, scenes, and storylines in minutes, not months.",
